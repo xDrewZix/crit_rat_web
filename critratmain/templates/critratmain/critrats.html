@@ -1,0 +1,12 @@
+{% extends 'critratmain/base.html' %}
+
+{% block content %}
+<ul>
+  {% for critrat in critlist %}
+	<li>{{ critrat.critrats }}</li>
+  {% empty %}
+       <li> no critical rationalists have been added yet</li>
+  {% endfor %}
+</ul>
+
+{% endblock content %}
